@@ -6,6 +6,10 @@ app.config(function ($routeProvider) {
             controller: "HomeController",
             templateUrl: "views/home.html"
         })
+        .when('/people', {
+            controller: "PeopleController",
+            templateUrl: "views/people.html"
+        })
         .when('/photos/:id', {
             controller: 'PhotoController',
             templateUrl: 'views/photo.html'

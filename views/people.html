@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-sm-9">
+        <input ng-model="addedName" placeholder="First name">
+        <input ng-model="addedDate" placeholder="Date of birth">
+
+        <button ng-click="random()">losuj</button>
+
+        <button ng-click="add()">add</button>
+
+        <button ng-click="generate()">generuj osobę</button>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-9">
+        <table class="table">
+        <br>
+        WYLOSOWANA OSOBA: {{ result.name }}
+        <br>
+        {{ result.date }}
+        <br><br>
+        </table>
+    </div>
+</div>
+
+
+
+
+<div class="peopleList">
+    <div class="item col-md-4" ng-repeat="person in peopleList">
+
+        <div>{{ person.name }}</div>
+        <div>{{ person.date }}</div>
+
+    </div>
+
+</div>
