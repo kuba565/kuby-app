@@ -26,7 +26,7 @@ app.controller('PeopleController', ['$scope', '$routeParams', function ($scope, 
 
     $scope.generate = function () {
         var randomNumber1to100 = Math.floor(Math.random() * 100);
-        var randomDate = Math.floor(Math.random() * 2017);
+        var randomDate = Math.floor(Math.random() * 67) + 1950;
 
         var r = confirm("Do you wish to add a randomly generated person?");
         if (r === true) {
