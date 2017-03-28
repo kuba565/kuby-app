@@ -3,11 +3,11 @@
         <input ng-model="addedName" placeholder="First name">
         <input ng-model="addedDate" placeholder="Date of birth">
 
-        <button ng-click="random()">losuj</button>
+        <button ng-click="random()">random person</button>
 
         <button ng-click="add()">add</button>
 
-        <button ng-click="generate()">generuj osobę</button>
+        <button ng-click="generate()">generate a person</button>
 
     </div>
 </div>
@@ -16,9 +16,9 @@
     <div class="col-sm-9">
         <table class="table">
         <br>
-        WYLOSOWANA OSOBA: {{ result.name }}
+        random person: {{ result.name }}
         <br>
-        rok: {{ result.date }}
+        year: {{ result.date }}
         <br><br>
         </table>
     </div>
@@ -30,8 +30,8 @@
 <div class="peopleList">
     <div class="item col-md-4" ng-repeat="person in peopleList">
 
-        <div>imię: {{  person.name }}</div>
-        <div>rok: {{ person.date }}</div>
+        <div>name: {{  person.name }}</div>
+        <div>year: {{ person.date }}</div>
 
     </div>
 
