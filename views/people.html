@@ -18,7 +18,7 @@
         <br>
         WYLOSOWANA OSOBA: {{ result.name }}
         <br>
-        {{ result.date }}
+        rok: {{ result.date }}
         <br><br>
         </table>
     </div>
@@ -30,8 +30,8 @@
 <div class="peopleList">
     <div class="item col-md-4" ng-repeat="person in peopleList">
 
-        <div>{{ person.name }}</div>
-        <div>{{ person.date }}</div>
+        <div>imię: {{  person.name }}</div>
+        <div>rok: {{ person.date }}</div>
 
     </div>
 

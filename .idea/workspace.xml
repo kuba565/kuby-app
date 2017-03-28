@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bfbbaf6-b764-4d51-8032-c182897c9b3a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/controllers/PeopleController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/services/peoples.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/people.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/home.html" afterPath="$PROJECT_DIR$/views/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/PeopleController.js" afterPath="$PROJECT_DIR$/js/controllers/PeopleController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/people.html" afterPath="$PROJECT_DIR$/views/people.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,21 +17,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PeopleController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PeopleController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controllers/PeopleController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+            <state relative-caret-position="75">
+              <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="people.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="people.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/people.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state relative-caret-position="90">
+              <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -93,8 +88,8 @@
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/views/home.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/views/people.html" />
         <option value="$PROJECT_DIR$/js/controllers/PeopleController.js" />
+        <option value="$PROJECT_DIR$/views/people.html" />
       </list>
     </option>
   </component>
@@ -702,7 +697,7 @@
       <option name="presentableId" value="Default" />
       <updated>1490688241170</updated>
       <workItem from="1490688249070" duration="4617000" />
-      <workItem from="1490696241685" duration="7686000" />
+      <workItem from="1490696241685" duration="9192000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1490689893526</created>
@@ -711,11 +706,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490689893526</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="28 mar 2017 v. 1.0">
+      <created>1490703976769</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1490703976769</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12303000" />
+    <option name="totallyTimeSpent" value="13809000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1282" height="812" extended-state="6" />
@@ -758,7 +760,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="28 mar 2017 v. 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="28 mar 2017 v. 1.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -996,18 +999,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/people.html">
+    <entry file="file://$PROJECT_DIR$/js/controllers/PeopleController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="75">
+          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/PeopleController.js">
+    <entry file="file://$PROJECT_DIR$/views/people.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+        <state relative-caret-position="90">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
           <folding />
         </state>
       </provider>

@@ -1,9 +1,9 @@
 app.controller('PeopleController', ['$scope', '$routeParams', function($scope, $routeParams) {
     $scope.peopleList = [
-        {name: 'osoba 1', date: 'rok: ' + 2017},
-        {name: 'osoba 2', date: 'rok: ' + 2016},
-        {name: 'osoba 3', date: 'rok: ' + 2015},
-        {name: 'osoba 4', date: 'rok: ' + 2014}
+        {name: 'osoba 1', date: 2017},
+        {name: 'osoba 2', date: 2016},
+        {name: 'osoba 3', date: 2015},
+        {name: 'osoba 4', date: 2014}
     ];
     $scope.add = function() {
         if($scope.addedName && $scope.addedDate) {
@@ -28,7 +28,7 @@ app.controller('PeopleController', ['$scope', '$routeParams', function($scope, $
 
         var r = confirm("Chcesz dodać losową osobę?");
         if (r === true) {
-            $scope.peopleList.push({name: 'osoba ' + randomNumber1to100, date: randomDate + ' rok' });
+            $scope.peopleList.push({name: 'osoba ' + randomNumber1to100, date: randomDate });
             alert('dodano: osoba ' + randomNumber1to100 +'\n' +'rok: ' + randomDate )
         } else {
             alert("Nie dodano osoby :(");
