@@ -2,60 +2,102 @@
     <div class="col-sm-9">
         <input ng-model="addedName" placeholder="First name">
         <input ng-model="addedLastName" placeholder="Last name">
-        <input ng-model="addedDate" placeholder="Date of birth">
+        <input ng-model="addedDate" placeholder="Year of birth">
 
-        <button ng-click="add()">add</button>
+        <button  type="button" class="btn btn-outline-primary" ng-click="add()">add</button>
 
         <button ng-click="generate()">generate a person</button>
 
-        <button ng-click="random()">random person</button>
+        <button ng-click="random()">random person from the list</button>
 
+        <button ng-click="randomFromGroup()">random person from the group</button>
 
-        <button ng-click="clear()">Clear the list</button>
-
-        <button ng-click="reset()">reset the counter</button>
     </div>
 </div>
 
-<div class="row">
-    <div class="col-sm-6">
-        <br>
-        random person: {{ result.name }}
-        <br>
-        year: {{ result.date }}
-        <br><br>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-6">
+            <br>
+            RANDOM PERSON FROM THE LIST:
+            <div>name: {{ result.name }}</div>
+            <div>last name: {{ result.lastName }}</div>
+            <div>year: {{ result.date }}</div>
+            <div>e-mail: {{ result.email }}</div>
+            <br><br>
+        </div>
+        <div class="col-sm-6">
+            <br>
+            RANDOM PERSON FROM THE GROUP:
+            <div>name: {{ resultGroup.name }}</div>
+            <div>last name: {{ resultGroup.lastName }}</div>
+            <div>year: {{ resultGroup.date }}</div>
+            <div>e-mail: {{ resultGroup.email }}</div>
+            <br><br>
+        </div>
     </div>
-
-</div>
-
-
+    <div class="row">
+        <div class="col-xs-6">
 
 
-<div class=" ">
-    <div class="" ng-repeat="person in peopleList">
+            <div class=" ">
+                <p>LIST:</p>
 
-        <div>name: {{  person.name }}</div>
-        <div>last name: {{ person.lastName }}</div>
-        <div>year: {{ person.date }}</div>
+                <button ng-click="clear()">Clear the list</button>
 
-        <button ng-click="remove($index)">Remove</button>
-        <button ng-click="addToGroup($index)">Add the person to the group</button>
+                <button ng-click="reset()">reset the counter</button>
+                Sort the list by:
+                <button ng-click="sortNameList()">name</button>
+                <button ng-click="sortLastNameList()">last name</button>
+                <button ng-click="sortYearList()">year</button>
+                <br> <br>
+                <div class="" ng-repeat="person in peopleList">
 
-        <br> <br>
+                    <div>name: {{ person.name }}</div>
+                    <div>last name: {{ person.lastName }}</div>
+                    <div>year: {{ person.date }}</div>
+                    <div>e-mail: {{ person.email }}</div>
 
+                    <button ng-click="remove($index)">Remove</button>
+                    <button ng-click="addToGroup($index)">Add the person to the group</button>
+
+                    <br> <br>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-xs-6">
+
+
+            <div class="" ng-repeat="group in groups">
+                <p>GROUP {{$index + 1}}:</p>
+                <button ng-click="clearGroup($index)">Clear the group</button>
+                <button ng-click="mailGroup($index)">mail the group</button>
+
+
+                Sort the group by:
+                <button ng-click="sortName($index)">name</button>
+                <button ng-click="sortLastName($index)">last name</button>
+                <button ng-click="sortYear($index)">year</button>
+
+                <br><br>
+
+                <div class="" ng-repeat="person in group">
+
+                    <div>name: {{ person.name }}</div>
+                    <div>last name: {{ person.lastName }}</div>
+                    <div>year: {{ person.date }}</div>
+                    <div>e-mail: {{ person.email }}</div>
+
+                    <button ng-click="removeFromGroup($parent.$index, $index)">Remove</button>
+
+                    <br> <br>
+                </div>
+
+            </div>
+        </div>
     </div>
-
 </div>
-<p>GROUP:</p>
-<div class=" ">
-    <div class="" ng-repeat="person in groupList">
-
-        <div>name: {{  person.name }}</div>
-        <div>last name: {{ person.lastName }}</div>
-        <div>year: {{ person.date }}</div>
-
-        <br> <br>
-    </div>
-
-</div>
-
